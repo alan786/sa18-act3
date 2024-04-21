@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ product.name }} Details</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 20px;
+        }
+
+        h1 {
+            color: #0275d8;
+        }
+
+        p {
+            background-color: #ffffff;
+            padding: 8px;
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 15px;
+            background-color: #0275d8;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        a:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>{{ product.name }}</h1>
+    <p>Price: {{ product.price }}</p>
+    <p>Description: {{ product.description }}</p>
+
+    <a href="{% url 'index'  %}" class="back-link">Back</a>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const backButton = document.querySelector('.back-link');
+            backButton.addEventListener('click', function(event) {
+            });
+        });
+    </script>
+</body>
+</html>
+
+

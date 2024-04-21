@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products List</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #0275d8;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            background-color: #ffffff;
+            margin: 8px 0;
+            padding: 10px;
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .product-link {
+            text-decoration: none;
+            color: #0275d8;
+            font-weight: bold;
+        }
+
+        .product-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>Random Products List</h1>
+    <ul>
+        {% for product in products %}
+            <li><a href="{% url 'show' product.id %}" class="product-link">{{ product.name }}</a></li>
+        {% endfor %}
+    </ul>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const links = document.querySelectorAll('.product-link');
+
+            links.forEach(link => {
+                link.addEventListener('click', function(event) {
+                    console.log(`You clicked on ${this.textContent}`);
+        
+                });
+            });
+        });
+    </script>
+</body>
+</html>
+

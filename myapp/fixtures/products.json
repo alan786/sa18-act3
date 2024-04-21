@@ -1,0 +1,47 @@
+[
+    {
+        "model": "myapp.product",
+        "pk": 1,
+        "fields": {
+            "name": "Eco Friendly Reusable Water Bottle", 
+            "price": "14.99", 
+            "description": "Stay hydrated and environmentally conscious with our 24 oz BPA-free, durable, and reusable water bottle. Featuring a leak-proof cap and a convenient carry handle, it’s perfect for on-the-go lifestyles and reduces plastic waste."
+        }
+    },
+    {
+        "model": "myapp.product",
+        "pk": 2,
+        "fields": {
+            "name": "Bluetooth Wireless Earbuds", 
+            "price": "59.95", 
+            "description": "Experience the freedom of true wireless listening with these sleek Bluetooth earbuds. Offering high-quality sound, easy connectivity, and a comfortable fit, they are perfect for your daily commute, gym sessions, or enjoying music on the go."
+        }
+    },
+    {
+        "model": "myapp.product",
+        "pk": 3,
+        "fields": {
+            "name": "Gourmet Arabica Coffee Beans",
+            "price": "12.50",
+            "description": "Our gourmet Arabica coffee beans are sourced from the highlands of Colombia, offering a smooth, rich, and full-bodied flavor. Perfect for coffee connoisseurs looking to brew a superior cup at home."
+        }
+    },
+    {
+        "model": "myapp.product",
+        "pk": 4,
+        "fields": {
+            "name": "Organic Dog Treats",
+            "price": "8.99",
+            "description": "Treat your furry friend to the best with our organic, gluten-free dog treats made from all-natural ingredients. These treats are not only tasty but also provide essential nutrients to keep your pet healthy and happy."
+        }
+    },
+    {
+        "model": "myapp.product",
+        "pk": 5,
+        "fields": {
+            "name": "LED Desk Lamp with Wireless Charger",
+            "price": "45.00",
+            "description": "Illuminate your workspace with our stylish LED desk lamp that also doubles as a wireless charger. Featuring adjustable brightness levels and a flexible arm, this lamp combines functionality with modern design."
+        }
+    }
+]
